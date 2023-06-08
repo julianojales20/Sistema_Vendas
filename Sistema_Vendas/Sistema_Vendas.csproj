@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,16 +47,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAdminDashboard.cs">
+    <Compile Include="AppSetting.cs" />
+    <Compile Include="BLLClasses\CategoriaBll.cs" />
+    <Compile Include="BLLClasses\LoginBLL.cs" />
+    <Compile Include="BLLClasses\UserBLL.cs" />
+    <Compile Include="DALdados\CategoriaDal.cs" />
+    <Compile Include="DALdados\LoginDAL.cs" />
+    <Compile Include="DALdados\SqlHelper.cs" />
+    <Compile Include="DALdados\UserDAL.cs" />
+    <Compile Include="UIform\frmAdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAdminDashboard.Designer.cs">
+    <Compile Include="UIform\frmAdminDashboard.Designer.cs">
       <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIform\FrmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\FrmCategoria.Designer.cs">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIform\frmConfiguracoesBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\frmConfiguracoesBanco.Designer.cs">
+      <DependentUpon>frmConfiguracoesBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIform\frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIform\frmUserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\frmUserDashboard.Designer.cs">
+      <DependentUpon>frmUserDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAdminDashboard.resx">
+    <Compile Include="UIform\frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UIform\frmAdminDashboard.resx">
       <DependentUpon>frmAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIform\FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIform\frmConfiguracoesBanco.resx">
+      <DependentUpon>frmConfiguracoesBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIform\frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIform\frmUserDashboard.resx">
+      <DependentUpon>frmUserDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UIform\frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

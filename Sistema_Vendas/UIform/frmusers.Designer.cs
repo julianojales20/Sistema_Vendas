@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmusers));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bntFecharJanela = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -61,7 +59,6 @@
             this.txtUserID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bntFecharJanela)).BeginInit();
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).BeginInit();
             this.SuspendLayout();
@@ -69,26 +66,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.bntFecharJanela);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1535, 61);
             this.panel1.TabIndex = 0;
-            // 
-            // bntFecharJanela
-            // 
-            this.bntFecharJanela.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.bntFecharJanela.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bntFecharJanela.Image = ((System.Drawing.Image)(resources.GetObject("bntFecharJanela.Image")));
-            this.bntFecharJanela.Location = new System.Drawing.Point(1493, 12);
-            this.bntFecharJanela.Name = "bntFecharJanela";
-            this.bntFecharJanela.Size = new System.Drawing.Size(30, 30);
-            this.bntFecharJanela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.bntFecharJanela.TabIndex = 1;
-            this.bntFecharJanela.TabStop = false;
-            this.bntFecharJanela.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -422,7 +405,6 @@
             this.Resize += new System.EventHandler(this.frmusers_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bntFecharJanela)).EndInit();
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUser)).EndInit();
@@ -435,7 +417,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox bntFecharJanela;
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnDelete;

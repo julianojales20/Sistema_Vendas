@@ -23,11 +23,6 @@ namespace Sistema_Vendas.UIform
         UserBll u = new UserBll();
         UserDal dal = new UserDal();
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (txtFistName.Text != "")
@@ -261,11 +256,6 @@ namespace Sistema_Vendas.UIform
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             Limpar();
-        }
-
-        private void dgvUser_DoubleClick(object sender, EventArgs e)
-        {
-           
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

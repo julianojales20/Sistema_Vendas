@@ -36,12 +36,9 @@
             this.produtosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabControlPrincipal = new System.Windows.Forms.TabControl();
             this.pnlFooter.SuspendLayout();
             this.menuStripTop.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlFooter
@@ -101,6 +98,7 @@
             this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
             this.produtosToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
             this.produtosToolStripMenuItem.Text = "Produtos";
+            this.produtosToolStripMenuItem.Click += new System.EventHandler(this.produtosToolStripMenuItem_Click);
             // 
             // faturaToolStripMenuItem
             // 
@@ -114,43 +112,21 @@
             this.transaçãoToolStripMenuItem.Size = new System.Drawing.Size(85, 21);
             this.transaçãoToolStripMenuItem.Text = "Transações";
             // 
-            // tabControl1
+            // tabControlPrincipal
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 25);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1481, 703);
-            this.tabControl1.TabIndex = 2;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1473, 677);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabControlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPrincipal.Location = new System.Drawing.Point(0, 25);
+            this.tabControlPrincipal.Name = "tabControlPrincipal";
+            this.tabControlPrincipal.SelectedIndex = 0;
+            this.tabControlPrincipal.Size = new System.Drawing.Size(1481, 703);
+            this.tabControlPrincipal.TabIndex = 2;
             // 
             // frmAdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1481, 790);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlPrincipal);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.menuStripTop);
             this.MainMenuStrip = this.menuStripTop;
@@ -161,12 +137,10 @@
             this.Text = "Painel Adminstrivo:";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAdminDashboard_FormClosing);
-            this.Resize += new System.EventHandler(this.frmAdminDashboard_Resize);
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
             this.menuStripTop.ResumeLayout(false);
             this.menuStripTop.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,9 +156,7 @@
         private System.Windows.Forms.ToolStripMenuItem produtosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem faturaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem transaçãoToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabControl tabControlPrincipal;
     }
 }
 

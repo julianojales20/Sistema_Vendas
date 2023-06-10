@@ -79,6 +79,12 @@
     <Compile Include="UIform\frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIform\FrmProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIform\FrmProdutos.Designer.cs">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIform\frmUserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIform\frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIform\FrmProdutos.resx">
+      <DependentUpon>FrmProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIform\frmUserDashboard.resx">
       <DependentUpon>frmUserDashboard.cs</DependentUpon>

@@ -20,11 +20,6 @@ namespace Sistema_Vendas.UIform
             InitializeComponent();
         }
 
-        private void bntFecharJanela_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         CategoriaBll c = new CategoriaBll();
         CategoriaDal dal = new CategoriaDal();
         UserDal udal = UserDal.Instance;
